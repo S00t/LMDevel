@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#222222</color>
+    <color name="ColorPrimaryDark">#0f34d3</color>
+    <color name="TextPrimary">#ded71e</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Red">#DE4B39</color>
+    <color name="Orange">#f0ad4e</color>
+
+
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="105dp">
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:singleLine="true"
+        android:background="@drawable/round_edit_text"
+        android:ems="25"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp"
+        android:hint="Nazwa.."
+        android:textSize="15dp" />
+    <EditText
+        android:id="@+id/editTextCategory"
+        android:layout_width="match_parent"
+        android:layout_below="@id/editTextName"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:background="@drawable/round_edit_text"
+        android:ems="25"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp"
+        android:hint="Kategoria.."
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/devider1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/devider"
+        android:layout_below="@id/editTextCategory"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/dateCityLayout"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devider1">
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:layout_marginRight="7.5dp"
+            android:singleLine="true"
+            android:background="@drawable/round_edit_text"
+            android:ems="25"
+            android:padding="10dp"
+            android:hint="Data..."
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_marginLeft="7.5dp"
+            android:background="@drawable/round_edit_text"
+            android:ems="25"
+            android:padding="10dp"
+            android:hint="Miejscowość..."
+            android:textSize="15dp" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextAddres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateCityLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:background="@drawable/round_edit_text"
+        android:ems="25"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp"
+        android:hint="Adres.."
+        android:textSize="15dp" />
+    <EditText
+        android:id="@+id/editTextPersonCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAddres"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:background="@drawable/round_edit_text"
+        android:ems="25"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp"
+        android:hint="Ilość osób.."
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/radioLayout"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPersonCount">
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edit_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="wydarzenie prywatne"
+        android:textColor="@color/White"
+        android:layout_marginLeft="15dp"
+        />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/devider2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/devider"
+        android:layout_below="@id/radioLayout"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_below="@id/devider2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:textColor="@color/White"
+        />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
