@@ -18,7 +18,7 @@ public class Account {
     @DatabaseField
     Boolean showName;
     @DatabaseField
-    String gravatarUrl;
+    String avatarUrl;
 
     @Override
     public String toString() {
@@ -28,25 +28,25 @@ public class Account {
                 ", fullName='" + fullName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", showName=" + showName +
-                ", gravatarUrl='" + gravatarUrl + '\'' +
+                ", gravatarUrl='" + avatarUrl + '\'' +
                 '}';
     }
 
 
 
-    public Account(String email, String nickName, String fullName, String phoneNumber, Boolean showName, String gravatarUrl) {
+    public Account(String email, String nickName, String fullName, String phoneNumber, Boolean showName, String avatarUrl) {
         this.email = email;
         this.nickName = nickName;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         this.showName = showName;
-        this.gravatarUrl = gravatarUrl;
+        this.avatarUrl = avatarUrl;
     }
 
     public Account(String email, String nickName, String gravatarUrl, String fullName, Boolean showName) {
         this.email = email;
         this.nickName = nickName;
-        this.gravatarUrl = gravatarUrl;
+        this.avatarUrl = gravatarUrl;
         this.fullName = fullName;
         this.showName = showName;
     }
@@ -72,7 +72,7 @@ public class Account {
     }
 
     public String getGravatarUrl() {
-        return gravatarUrl;
+        return avatarUrl;
     }
 
 
@@ -98,6 +98,6 @@ public class Account {
     }
 
     public void setGravatarUrl(String gravatarUrl) {
-        this.gravatarUrl = gravatarUrl;
+        this.avatarUrl = gravatarUrl;
     }
 }
