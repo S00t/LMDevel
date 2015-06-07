@@ -6,6 +6,13 @@
     <string name="drawer_close">Slider Menu Closed</string>
 
     <!-- Nav Drawer Menu Items -->
+    <string name="nav_drawer_item_home">Home</string>
+    <string name="nav_drawer_item_people">Find people</string>
+    <string name="nav_drawer_item_photos">Photos</string>
+    <string name="nav_drawer_item_communities">Communities</string>
+    <string name="nav_drawer_item_pages">Pages</string>
+    <string name="nav_drawer_item_hot">What\'s hot</string>
+
     <string-array name="nav_drawer_items">
         <item >Home</item>
         <item >Find People</item>

@@ -21,12 +21,10 @@ public class LoginActivity  extends Validate {
     private String message;
     private String LoginString;
     private String PasswordString;
+
     EditText login;
-
     EditText passwordLogin;
-
     Button loginButton;
-
     Button registerButton;
 
     @Override
@@ -44,7 +42,7 @@ public class LoginActivity  extends Validate {
             @Override
             public void onClick(View v) {
                 resault = ValidateLogin(login.getText());
-               if(resault == true){
+               if(resault){
 
                    Toast.makeText(getApplicationContext(), getResources().getText(R.string.login_fail),  Toast.LENGTH_LONG).show();
 
