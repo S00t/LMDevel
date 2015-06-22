@@ -12,6 +12,9 @@
 
     <!-- MAIN VIEWS -->
     <style name="NavigationView"></style>
+    <style name="AppToolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
 
     <!-- FRAGMENT ... -->
     <!-- FRAGMENT ... -->
