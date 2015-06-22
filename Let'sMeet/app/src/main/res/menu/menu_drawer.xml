@@ -3,28 +3,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/navigation_item_1"
+            android:id="@+id/navigationItem1"
             android:checked="true"
             android:icon="@drawable/logo"
             android:title="@string/nav_drawer_item_home"/>
         <item
-            android:id="@+id/navigation_item_2"
+            android:id="@+id/navigationItem2"
             android:icon="@drawable/logo"
             android:title="@string/nav_drawer_item_people"/>
         <item
-            android:id="@+id/navigation_item_3"
+            android:id="@+id/navigationItem3"
             android:icon="@drawable/logo"
             android:title="@string/nav_drawer_item_photos"/>
         <item
-            android:id="@+id/navigation_item_4"
+            android:id="@+id/navigationItem4"
             android:icon="@drawable/logo"
             android:title="@string/nav_drawer_item_communities"/>
         <item
-            android:id="@+id/navigation_item_5"
+            android:id="@+id/navigationItem5"
             android:icon="@drawable/logo"
             android:title="@string/nav_drawer_item_pages"/>
         <item
-            android:id="@+id/navigation_item_6"
+            android:id="@+id/navigationItem6"
             android:icon="@drawable/logo"
             android:title="@string/nav_drawer_item_hot"/>
 

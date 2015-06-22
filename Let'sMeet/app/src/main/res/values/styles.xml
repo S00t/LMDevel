@@ -10,4 +10,10 @@
             Customize your theme here. -->
     </style>
 
+    <!-- MAIN VIEWS -->
+    <style name="NavigationView"></style>
+
+    <!-- FRAGMENT ... -->
+    <!-- FRAGMENT ... -->
+
 </resources>

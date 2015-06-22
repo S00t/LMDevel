@@ -5,11 +5,12 @@ import android.support.v4.app.Fragment;
 /**
  * Created by Soot_Win on 2015-03-21.
  */
-public class FragmentSearch extends Fragment {
+public class FragmentEventAdd extends Fragment {
 
     public static Fragment newInstance (){
-        FragmentSearch f = new FragmentSearch();
+        FragmentEventAdd f = new FragmentEventAdd();
         return f;
     }
+
 
 }

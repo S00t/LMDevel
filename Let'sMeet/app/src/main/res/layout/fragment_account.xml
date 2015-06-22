@@ -12,8 +12,8 @@
         android:layout_marginTop="90dp"
         android:background="@drawable/round_edit_text"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/devider1"
-        android:layout_toStartOf="@+id/devider1"
+        android:layout_toLeftOf="@+id/divider1"
+        android:layout_toStartOf="@+id/divider1"
         android:layout_marginRight="26dp"
         android:layout_marginEnd="26dp" />
 
@@ -30,8 +30,8 @@
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_above="@+id/removeButton"
-        android:layout_toRightOf="@+id/devider1"
-        android:layout_toEndOf="@+id/devider1" />
+        android:layout_toRightOf="@+id/divider1"
+        android:layout_toEndOf="@+id/divider1" />
 
     <Button
         android:id="@+id/removeButton"
@@ -45,7 +45,7 @@
         android:layout_alignStart="@+id/addButton" />
 
     <ImageView
-        android:id="@+id/devider1"
+        android:id="@+id/divider1"
         android:layout_width="39dp"
         android:layout_height="15dp"
         android:background="@drawable/devider"

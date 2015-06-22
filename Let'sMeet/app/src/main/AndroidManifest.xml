@@ -17,7 +17,7 @@
 
         </activity>
 
-       <activity android:name=".SplashActivity"
+       <activity android:name=".Activities.ActivitySplash"
            android:screenOrientation="portrait">
             <intent-filter>-->
                 <action android:name="android.intent.action.MAIN" />
@@ -25,17 +25,7 @@
               <category android:name="android.intent.category.LAUNCHER" />
            </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
-            android:screenOrientation="portrait">
-        </activity>
 
-        <activity android:name=".RegisterActivity" >
-        </activity>
-        <activity
-            android:name=".testctivity"
-            android:label="@string/title_activity_testctivity"
-            android:screenOrientation="portrait">
-        </activity>
     </application>
 
 </manifest>

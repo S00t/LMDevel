@@ -1,4 +1,4 @@
-package com.example.letsmeet.letsmeet.Adapters;
+package com.example.letsmeet.letsmeet.Views.Adapters;
 
 
 import java.util.ArrayList;

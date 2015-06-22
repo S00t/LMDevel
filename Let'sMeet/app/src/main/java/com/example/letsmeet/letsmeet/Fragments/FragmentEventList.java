@@ -6,4 +6,11 @@ import android.support.v4.app.Fragment;
  * Created by Soot_Win on 2015-03-21.
  */
 public class FragmentEventList extends Fragment {
+
+    public static Fragment newInstance (){
+        FragmentEventList f = new FragmentEventList();
+        return f;
+    }
+
+
 }

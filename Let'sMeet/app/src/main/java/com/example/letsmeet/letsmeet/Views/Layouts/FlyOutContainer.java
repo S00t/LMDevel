@@ -1,4 +1,4 @@
-package com.example.letsmeet.letsmeet.Views;
+package com.example.letsmeet.letsmeet.Views.Layouts;
 
 import android.content.Context;
 import android.util.AttributeSet;

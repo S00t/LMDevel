@@ -60,4 +60,6 @@
     <string name="site">http://letsmeet.world</string>
     <string name="c_id">;TLQO0gF2DW6O5_J2jWQt8H!DKowF3EpRfV8RQDh</string>
     <string name="ss">fSOa;H3a_qZ70vYhljGmqfgmSvmgL@tWU@wRO@1Nr7Fo8wmF;cm6n491dv37Ga5ycbebzvP=rV;-uVdlBmhxIyDr9jMpiZprrAwgDqh2.EhiYbKju4COQE28T=.e2CRS</string>
+    <string name="drawerOpen">open</string>
+    <string name="drawerClose">close</string>
 </resources>

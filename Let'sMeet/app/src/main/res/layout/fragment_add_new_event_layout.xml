@@ -39,7 +39,7 @@
         android:textSize="15dp" />
 
     <ImageView
-        android:id="@+id/devider1"
+        android:id="@+id/divider1"
         android:layout_width="match_parent"
         android:layout_height="15dp"
         android:layout_marginTop="15dp"
@@ -55,7 +55,7 @@
         android:layout_marginTop="7.5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/devider1">
+        android:layout_below="@id/divider1">
         <EditText
             android:id="@+id/editTextDate"
             android:layout_width="fill_parent"

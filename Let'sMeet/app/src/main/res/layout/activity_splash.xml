@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context="com.example.letsmeet.letsmeet.SplashActivity">
+    tools:context="com.example.letsmeet.letsmeet.Activities.ActivitySplash">
 
     <ImageView
         android:id="@+id/imgLogo"
