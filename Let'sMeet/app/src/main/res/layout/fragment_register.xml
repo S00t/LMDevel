@@ -1,134 +1,94 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentRegisterLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main"
-    android:orientation="vertical">
+    android:background="@android:color/transparent">
 
-    <RelativeLayout
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentRegisterParentHint"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="105dp">
+        android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextName"
+            android:id="@+id/fragmentRegisterName"
+            style="@style/FragmentRegisterEditTextName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
 
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/round_edit_text"
-            android:ems="25"
-            android:hint="Imie...   "
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textSize="15dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentRegisterParentHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextSurname"
+            android:id="@+id/fragmentRegisterSurname"
+            style="@style/FragmentRegisterEditTextSurname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextName"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/round_edit_text"
-            android:ems="25"
-            android:hint="Nazwisko..."
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textSize="15dp" />
+            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentRegisterParentHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/fragmentRegisterMail"
+            style="@style/FragmentRegisterEditTextMail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextSurname"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/round_edit_text"
-            android:ems="25"
-            android:hint="Email..."
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textSize="15dp" />
+            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentRegisterParentHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/fragmentRegisterPassword"
+            style="@style/FragmentRegisterEditTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextEmail"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/round_edit_text"
-            android:ems="25"
-            android:hint="Hasło..."
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textSize="15dp" />
+            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentRegisterParentHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextPassword2"
+            android:id="@+id/fragmentRegisterRepeatPassword"
+            style="@style/FragmentRegisterEditTextRepeatPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextPassword"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/round_edit_text"
-            android:ems="25"
-            android:hint="Powtórz hasło..."
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textSize="15dp" />
+            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/fragmentRegisterButtonRegister"
+        style="@style/FragmentRegisterButtonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
-        <Button
-            android:id="@+id/registerButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextPassword2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/round_button"
-            android:text="Zarejestruj"
-            android:textColor="@color/White" />
+    <TextView
+        android:id="@+id/fragmentRegisterOrTextView"
+        style="@style/FragmentRegisterOrTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/orDivider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/registerButton"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="lub"
-            android:textColor="@color/White" />
-
-        <Button
-            android:id="@+id/googleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/orDivider"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/round_button_red"
-            android:text="Połącz z kontem Google"
-            android:textColor="@color/White" />
-
-    </RelativeLayout>
-
+    <Button
+        android:id="@+id/fragmentRegisterButtonRegisterGoogle"
+        style="@style/FragmentRegisterButtonRegisterGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

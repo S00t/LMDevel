@@ -2,4 +2,18 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- FRAGMENT REGISTER -->
+    <dimen name="FragmentRegisterLayoutMarginTop">30dp</dimen>
+    <!--<dimen name="FragmentRegisterEditTextEms">25</dimen>-->
+    <dimen name="FragmentRegisterEditTextMarginLeft">35dp</dimen>
+    <dimen name="FragmentRegisterEditTextMarginRight">35dp</dimen>
+    <dimen name="FragmentRegisterEditTextSize">15sp</dimen>
+    <dimen name="FragmentRegisterButtonRegisterMarginTop">35dp</dimen>
+    <dimen name="FragmentRegisterButtonRegisterMarginLeft">35dp</dimen>
+    <dimen name="FragmentRegisterButtonRegisterMarginRight">35dp</dimen>
+    <dimen name="FragmentRegisterOrTextMarginTop">15dp</dimen>
+    <dimen name="FragmentRegisterEditTextHeight">40dp</dimen>
+
+
 </resources>

@@ -15,8 +15,90 @@
     <style name="AppToolbar">
         <item name="android:background">?attr/colorPrimary</item>
     </style>
+    <style name="MainScreenFragmentContainer">
+        <item name="android:background">@drawable/background_main</item>
+        <item name="android:layout_marginTop">?attr/actionBarSize</item>
+    </style>
+
+
+    <!-- FRAGMENT REGISTER -->
+    <style name="FragmentRegisterLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/FragmentRegisterLayoutMarginTop</item>
+    </style>
+    <!-- parent for TextInputLayout's -->
+    <style name="FragmentRegisterParentHint">
+        <item name="android:layout_marginLeft">@dimen/FragmentRegisterEditTextMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/FragmentRegisterEditTextMarginRight</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!-- parent for EditText's -->
+    <style name="FragmentRegisterParentEditText">
+        <!--<item name="android:textSize">@dimen/FragmentRegisterEditTextSize</item>-->
+        <item name="android:background">@drawable/round_edit_text</item>
+        <!--<item name="android:ems">@dimen/FragmentRegisterEditTextEms</item>-->
+        <item name="android:ems">25</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <!-- name -->
+    <style name="FragmentRegisterEditTextName" parent="FragmentRegisterParentEditText">
+        <item name="android:hint">@string/FragmentRegisterHintName</item>
+        <!--<item name="android:padding"></item>-->
+    </style>
+    <!-- surname -->
+    <style name="FragmentRegisterEditTextSurname" parent="FragmentRegisterParentEditText">
+        <item name="android:hint">@string/FragmentRegisterHintSurname</item>
+    </style>
+    <!-- mail -->
+    <style name="FragmentRegisterEditTextMail" parent="FragmentRegisterParentEditText">
+        <item name="android:hint">@string/FragmentRegisterHintMail</item>
+    </style>
+    <!-- password -->
+    <style name="FragmentRegisterEditTextPassword" parent="FragmentRegisterParentEditText">
+        <item name="android:hint">@string/FragmentRegisterHintPassword</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <!-- repeat password -->
+    <style name="FragmentRegisterEditTextRepeatPassword" parent="FragmentRegisterParentEditText">
+        <item name="android:hint">@string/FragmentRegisterHintRepeatPassword</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <!-- button register-->
+    <style name="FragmentRegisterButtonRegister">
+        <item name="android:textSize">@dimen/FragmentRegisterEditTextSize</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/FragmentRegisterButtonRegisterMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/FragmentRegisterButtonRegisterMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/FragmentRegisterButtonRegisterMarginRight</item>
+        <item name="android:text">@string/FragmentRegisterButtonRegister</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+    <!-- 'or' text view -->
+    <style name="FragmentRegisterOrTextView">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/FragmentRegisterOrTextMarginTop</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:text">@string/FragmentRegisterOrTextView</item>
+    </style>
+    <!-- button register google-->
+    <style name="FragmentRegisterButtonRegisterGoogle">
+        <item name="android:textSize">@dimen/FragmentRegisterEditTextSize</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/FragmentRegisterButtonRegisterMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/FragmentRegisterButtonRegisterMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/FragmentRegisterButtonRegisterMarginRight</item>
+        <item name="android:text">@string/FragmentRegisterButtonRegisterGoogle</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+
 
     <!-- FRAGMENT ... -->
-    <!-- FRAGMENT ... -->
+
+
 
 </resources>

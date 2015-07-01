@@ -11,7 +11,7 @@ import com.example.letsmeet.letsmeet.R;
 public class ActivitySplash extends Activity {
 
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 1000;
+    private static int SPLASH_TIME_OUT = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

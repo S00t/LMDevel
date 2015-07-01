@@ -22,11 +22,19 @@
         <item >What\'s Hot</item>
     </string-array>
 
-    <!-- Nav Drawer List Item Icons -->
-    <!-- Keep them in order as the titles are in -->
-    <array name="nav_drawer_icons">
 
-    </array>
+    <!-- FRAGMENT REGISTER -->
+    <string name="FragmentRegisterHintName">Wpisz imię</string>
+    <string name="FragmentRegisterHintSurname">Wpisz nazwisko</string>
+    <string name="FragmentRegisterHintMail">Wpisz mail</string>
+    <string name="FragmentRegisterHintPassword">Wpisz hasło</string>
+    <string name="FragmentRegisterHintRepeatPassword">Powtórz hasło</string>
+    <string name="FragmentRegisterButtonRegister">Zarejestruj</string>
+    <string name="FragmentRegisterOrTextView">lub</string>
+    <string name="FragmentRegisterButtonRegisterGoogle">Połącz z kontem Google</string>
+
+
+
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
@@ -62,4 +70,6 @@
     <string name="ss">fSOa;H3a_qZ70vYhljGmqfgmSvmgL@tWU@wRO@1Nr7Fo8wmF;cm6n491dv37Ga5ycbebzvP=rV;-uVdlBmhxIyDr9jMpiZprrAwgDqh2.EhiYbKju4COQE28T=.e2CRS</string>
     <string name="drawerOpen">open</string>
     <string name="drawerClose">close</string>
+
+
 </resources>

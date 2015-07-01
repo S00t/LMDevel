@@ -50,20 +50,22 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
 
         setUpToolbar();
         setUpNavDrawer();
+
+        // test
+        openFragment(FRAGMENT_REGISTER);
     }
 
     private void setUpNavDrawer() {
         NavigationView view = (NavigationView) findViewById(R.id.navigationView);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.navigationDrawer);
         view.setNavigationItemSelectedListener(this);
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,
-                R.string.drawerOpen, R.string.drawerClose);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.drawerOpen, R.string.drawerClose);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
     }
 
     private void setUpToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.appToolbar);
         setSupportActionBar(toolbar);
 //        getSupportActionBar().setHomeButtonEnabled(true);
     }
