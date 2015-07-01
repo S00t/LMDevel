@@ -19,6 +19,18 @@
         <item name="android:background">@drawable/background_main</item>
         <item name="android:layout_marginTop">?attr/actionBarSize</item>
     </style>
+    
+    <style name="LetsMeetEditText">
+        <item name="android:textSize">@dimen/EditTextSize</item>
+        <item name="android:background">@drawable/round_edit_text</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="LetsMeetButton">
+        <item name="android:textSize">@dimen/EditTextSize</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
 
 
     <!-- FRAGMENT REGISTER -->
@@ -26,52 +38,39 @@
         <item name="android:orientation">vertical</item>
         <item name="android:layout_marginTop">@dimen/FragmentRegisterLayoutMarginTop</item>
     </style>
-    <!-- parent for TextInputLayout's -->
+    <!-- abstract parent for TextInputLayout's -->
     <style name="FragmentRegisterParentHint">
-        <item name="android:layout_marginLeft">@dimen/FragmentRegisterEditTextMarginLeft</item>
-        <item name="android:layout_marginRight">@dimen/FragmentRegisterEditTextMarginRight</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
-    <!-- parent for EditText's -->
-    <style name="FragmentRegisterParentEditText">
-        <!--<item name="android:textSize">@dimen/FragmentRegisterEditTextSize</item>-->
-        <item name="android:background">@drawable/round_edit_text</item>
-        <!--<item name="android:ems">@dimen/FragmentRegisterEditTextEms</item>-->
-        <item name="android:ems">25</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:paddingLeft">10dp</item>
-    </style>
     <!-- name -->
-    <style name="FragmentRegisterEditTextName" parent="FragmentRegisterParentEditText">
+    <style name="FragmentRegisterEditTextName" parent="LetsMeetEditText">
         <item name="android:hint">@string/FragmentRegisterHintName</item>
         <!--<item name="android:padding"></item>-->
     </style>
     <!-- surname -->
-    <style name="FragmentRegisterEditTextSurname" parent="FragmentRegisterParentEditText">
+    <style name="FragmentRegisterEditTextSurname" parent="LetsMeetEditText">
         <item name="android:hint">@string/FragmentRegisterHintSurname</item>
     </style>
     <!-- mail -->
-    <style name="FragmentRegisterEditTextMail" parent="FragmentRegisterParentEditText">
+    <style name="FragmentRegisterEditTextMail" parent="LetsMeetEditText">
         <item name="android:hint">@string/FragmentRegisterHintMail</item>
     </style>
     <!-- password -->
-    <style name="FragmentRegisterEditTextPassword" parent="FragmentRegisterParentEditText">
+    <style name="FragmentRegisterEditTextPassword" parent="LetsMeetEditText">
         <item name="android:hint">@string/FragmentRegisterHintPassword</item>
         <item name="android:inputType">textPassword</item>
     </style>
     <!-- repeat password -->
-    <style name="FragmentRegisterEditTextRepeatPassword" parent="FragmentRegisterParentEditText">
+    <style name="FragmentRegisterEditTextRepeatPassword" parent="LetsMeetEditText">
         <item name="android:hint">@string/FragmentRegisterHintRepeatPassword</item>
         <item name="android:inputType">textPassword</item>
     </style>
     <!-- button register-->
     <style name="FragmentRegisterButtonRegister">
-        <item name="android:textSize">@dimen/FragmentRegisterEditTextSize</item>
+        <item name="android:textSize">@dimen/EditTextSize</item>
         <item name="android:background">@drawable/round_button</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginTop">@dimen/FragmentRegisterButtonRegisterMarginTop</item>
-        <item name="android:layout_marginLeft">@dimen/FragmentRegisterButtonRegisterMarginLeft</item>
-        <item name="android:layout_marginRight">@dimen/FragmentRegisterButtonRegisterMarginRight</item>
         <item name="android:text">@string/FragmentRegisterButtonRegister</item>
         <item name="android:textColor">@color/White</item>
     </style>
@@ -85,20 +84,82 @@
     </style>
     <!-- button register google-->
     <style name="FragmentRegisterButtonRegisterGoogle">
-        <item name="android:textSize">@dimen/FragmentRegisterEditTextSize</item>
+        <item name="android:textSize">@dimen/EditTextSize</item>
         <item name="android:background">@drawable/round_button</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginTop">@dimen/FragmentRegisterButtonRegisterMarginTop</item>
-        <item name="android:layout_marginLeft">@dimen/FragmentRegisterButtonRegisterMarginLeft</item>
-        <item name="android:layout_marginRight">@dimen/FragmentRegisterButtonRegisterMarginRight</item>
         <item name="android:text">@string/FragmentRegisterButtonRegisterGoogle</item>
         <item name="android:textColor">@color/White</item>
     </style>
 
+    <!-- FRAGMENT EVENT ADD -->
+    <style name="FragmentEventAddDivider">
+        <item name="android:gravity">center_horizontal</item>
+        <!--<item name="android:background">@drawable/divider</item>-->
+        <item name="android:layout_marginTop">@dimen/FragmentEventAddDividerMarginTop</item>
+    </style>
 
+    <!-- name -->
+    <style name="FragmentEventAddParentHintName" parent="FragmentRegisterParentHint">
+    </style>
+    <style name="FragmentEventAddName" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentEventAddHintName</item>
+    </style>
+    <!-- category -->
+    <style name="FragmentEventAddParentHintCategory" parent="FragmentRegisterParentHint">
+    </style>
+    <style name="FragmentEventAddCategory" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentEventAddHintCategory</item>
+    </style>
+    <!-- date and place-->
+    <style name="FragmentEventAddLayoutDateAndPlace">
+    </style>
+    <style name="FragmentEventAddParentDate">
+        <item name="android:layout_marginRight">@dimen/FragmentEventAddDateMarginRight</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="FragmentEventAddDate" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentEventAddHintDate</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="FragmentEventAddParentPlace">
+        <item name="android:layout_marginLeft">@dimen/FragmentEventAddDateMarginLeft</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="FragmentEventAddPlace" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentEventAddHintPlace</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- address-->
+    <style name="FragmentEventAddParentAddress" parent="FragmentRegisterParentHint"></style>
+    <style name="FragmentEventAddAddress" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentEventAddHintAddress</item>
+    </style>
+    <!-- participants number-->
+    <style name="FragmentEventAddParentParticipantsNumber" parent="FragmentRegisterParentHint"></style>
+    <style name="FragmentEventAddParticipantsNumber" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentEventAddHintParticipantsNumber</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
 
-    <!-- FRAGMENT ... -->
+    <style name="FragmentEventAdd">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/background_main</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/FragmentEventAddPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/FragmentEventAddPaddingRight</item>
+    </style>
+    <style name="FragmentEventAddCheckBox">
+        <item name="android:text">@string/FragmentEventAddCheckBox</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginTop">@dimen/FragmentEventAddCheckBoxMarginTop</item>
+        <item name="android:background">@drawable/round_edit_text</item>
+    </style>
 
-
+    <style name="FragmentEventAddButtonAdd" parent="LetsMeetButton">
+        <item name="android:layout_marginTop">@dimen/FragmentEventAddButtonAddMarginTop</item>
+        <item name="android:text">@string/FragmentEventAddButtonAdd</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
 
 </resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/FragmentEventAdd"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentEventAddParentHintName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fragmentEventAddName"
+            style="@style/FragmentEventAddName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentEventAddParentHintCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fragmentEventAddCategory"
+            style="@style/FragmentEventAddCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        style="@style/FragmentEventAddDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FragmentEventAddDividerHeight" />
+
+    <LinearLayout
+        style="@style/FragmentEventAddLayoutDateAndPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FragmentEventAddParentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/fragmentEventAddDate"
+                style="@style/FragmentEventAddDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditTextHeight" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FragmentEventAddParentPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/fragmentEventAddPlace"
+                style="@style/FragmentEventAddPlace"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditTextHeight" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentEventAddParentAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fragmentEventAddAddress"
+            style="@style/FragmentEventAddAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FragmentEventAddParentParticipantsNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fragmentEventAddParticipantsNumber"
+            style="@style/FragmentEventAddParticipantsNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditTextHeight" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.widget.CheckBox
+        android:id="@+id/fragmentEventAddCheckBox"
+        style="@style/FragmentEventAddCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+<!--<LinearLayout-->
+        <!--style="@style/FragmentEventAddLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/round_edit_text" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="wydarzenie prywatne"-->
+            <!--android:textColor="@color/White" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:text="TEST"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<ImageView-->
+        <!--style="@style/FragmentEventAddDivider"-->
+        <!--android:src="@drawable/divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<ImageView-->
+        <!--style="@style/FragmentEventAddDivider"-->
+        <!--android:src="@drawable/divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:background="@drawable/divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp" />-->
+
+    <!--<TextView-->
+        <!--android:text="TEST"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+    <Button
+        style="@style/FragmentEventAddButtonAdd"
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

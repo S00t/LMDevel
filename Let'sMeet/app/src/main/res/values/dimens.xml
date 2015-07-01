@@ -3,17 +3,36 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- GLOBAL -->
+    <dimen name="EditTextSize">15sp</dimen>
+    <dimen name="EditTextHeight">40dp</dimen>
+
     <!-- FRAGMENT REGISTER -->
     <dimen name="FragmentRegisterLayoutMarginTop">30dp</dimen>
     <!--<dimen name="FragmentRegisterEditTextEms">25</dimen>-->
     <dimen name="FragmentRegisterEditTextMarginLeft">35dp</dimen>
     <dimen name="FragmentRegisterEditTextMarginRight">35dp</dimen>
-    <dimen name="FragmentRegisterEditTextSize">15sp</dimen>
+    <!--<dimen name="FragmentRegisterEditTextSize">15sp</dimen>-->
     <dimen name="FragmentRegisterButtonRegisterMarginTop">35dp</dimen>
     <dimen name="FragmentRegisterButtonRegisterMarginLeft">35dp</dimen>
     <dimen name="FragmentRegisterButtonRegisterMarginRight">35dp</dimen>
     <dimen name="FragmentRegisterOrTextMarginTop">15dp</dimen>
-    <dimen name="FragmentRegisterEditTextHeight">40dp</dimen>
+    <!-- FRAGMENT EVENT ADD -->
+    <dimen name="FragmentEventAddDividerMarginTop">15dp</dimen>
+    <dimen name="FragmentEventAddDividerMarginLeft">15dp</dimen>
+    <dimen name="FragmentEventAddDividerMarginRight">15dp</dimen>
+    <dimen name="FragmentEventAddDividerHeight">15dp</dimen>
+    <dimen name="FragmentEventAddLayoutDateAndPlaceMarginTop">7.5dp</dimen>
+    <!--<dimen name="FragmentEventAddLayoutDateAndPlaceMarginLeft">35dp</dimen>-->
+    <!--<dimen name="FragmentEventAddLayoutDateAndPlaceMarginRight">35dp</dimen>-->
+    <dimen name="FragmentEventAddDateMarginRight">7.5dp</dimen>
+    <dimen name="FragmentEventAddDateMarginLeft">7.5dp</dimen>
+    <dimen name="FragmentEventAddPaddingLeft">35dp</dimen>
+    <dimen name="FragmentEventAddPaddingRight">35dp</dimen>
+    <dimen name="FragmentEventAddCheckBoxWidth">35dp</dimen>
+    <dimen name="FragmentEventAddCheckBoxHeight">35dp</dimen>
+    <dimen name="FragmentEventAddCheckBoxMarginTop">15dp</dimen>
+    <dimen name="FragmentEventAddButtonAddMarginTop">25dp</dimen>
 
 
 </resources>

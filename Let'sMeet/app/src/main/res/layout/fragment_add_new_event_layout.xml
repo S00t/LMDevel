@@ -45,7 +45,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
-        android:background="@drawable/devider"
+        android:background="@drawable/divider"
         android:layout_below="@id/editTextCategory"
         android:layout_centerHorizontal="true" />
     <LinearLayout
@@ -146,7 +146,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
-        android:background="@drawable/devider"
+        android:background="@drawable/divider"
         android:layout_below="@id/radioLayout"
         android:layout_centerHorizontal="true" />
     <Button

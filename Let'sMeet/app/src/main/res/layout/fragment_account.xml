@@ -48,7 +48,7 @@
         android:id="@+id/divider1"
         android:layout_width="39dp"
         android:layout_height="15dp"
-        android:background="@drawable/devider"
+        android:background="@drawable/divider"
         android:layout_alignTop="@+id/removeButton"
         android:layout_centerHorizontal="true" />
 
@@ -59,7 +59,7 @@
         android:layout_marginTop="26dp"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
-        android:background="@drawable/devider"
+        android:background="@drawable/divider"
         android:layout_below="@+id/avatarPhoto"
         android:layout_centerHorizontal="true" />
 
@@ -150,7 +150,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
-        android:background="@drawable/devider"
+        android:background="@drawable/divider"
         android:layout_below="@+id/telCityLayout"
         android:layout_centerHorizontal="true" />
 

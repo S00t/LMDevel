@@ -23,15 +23,7 @@
     </string-array>
 
 
-    <!-- FRAGMENT REGISTER -->
-    <string name="FragmentRegisterHintName">Wpisz imię</string>
-    <string name="FragmentRegisterHintSurname">Wpisz nazwisko</string>
-    <string name="FragmentRegisterHintMail">Wpisz mail</string>
-    <string name="FragmentRegisterHintPassword">Wpisz hasło</string>
-    <string name="FragmentRegisterHintRepeatPassword">Powtórz hasło</string>
-    <string name="FragmentRegisterButtonRegister">Zarejestruj</string>
-    <string name="FragmentRegisterOrTextView">lub</string>
-    <string name="FragmentRegisterButtonRegisterGoogle">Połącz z kontem Google</string>
+
 
 
 
@@ -70,6 +62,26 @@
     <string name="ss">fSOa;H3a_qZ70vYhljGmqfgmSvmgL@tWU@wRO@1Nr7Fo8wmF;cm6n491dv37Ga5ycbebzvP=rV;-uVdlBmhxIyDr9jMpiZprrAwgDqh2.EhiYbKju4COQE28T=.e2CRS</string>
     <string name="drawerOpen">open</string>
     <string name="drawerClose">close</string>
+
+
+    <!-- FRAGMENT REGISTER -->
+    <string name="FragmentRegisterHintName">Wpisz imię</string>
+    <string name="FragmentRegisterHintSurname">Wpisz nazwisko</string>
+    <string name="FragmentRegisterHintMail">Wpisz mail</string>
+    <string name="FragmentRegisterHintPassword">Wpisz hasło</string>
+    <string name="FragmentRegisterHintRepeatPassword">Powtórz hasło</string>
+    <string name="FragmentRegisterButtonRegister">Zarejestruj</string>
+    <string name="FragmentRegisterOrTextView">lub</string>
+    <string name="FragmentRegisterButtonRegisterGoogle">Połącz z kontem Google</string>
+    <!-- FRAGMENT EVENT ADD -->
+    <string name="FragmentEventAddHintName">Nazwa ...</string>
+    <string name="FragmentEventAddHintCategory">Kategoria ...</string>
+    <string name="FragmentEventAddHintDate">Data ...</string>
+    <string name="FragmentEventAddHintPlace">Miejsce ...</string>
+    <string name="FragmentEventAddHintAddress">Adres ...</string>
+    <string name="FragmentEventAddHintParticipantsNumber">Ilość osób ...</string>
+    <string name="FragmentEventAddCheckBox">wydarzenie prywatne</string>
+    <string name="FragmentEventAddButtonAdd">Dodaj ...</string>
 
 
 </resources>

@@ -52,7 +52,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-        openFragment(FRAGMENT_REGISTER);
+        openFragment(FRAGMENT_EVENT_ADD);
     }
 
     private void setUpNavDrawer() {

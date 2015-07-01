@@ -13,7 +13,7 @@
             android:id="@+id/fragmentRegisterName"
             style="@style/FragmentRegisterEditTextName"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+            android:layout_height="@dimen/EditTextHeight" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -27,7 +27,7 @@
             android:id="@+id/fragmentRegisterSurname"
             style="@style/FragmentRegisterEditTextSurname"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+            android:layout_height="@dimen/EditTextHeight" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -40,7 +40,7 @@
             android:id="@+id/fragmentRegisterMail"
             style="@style/FragmentRegisterEditTextMail"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+            android:layout_height="@dimen/EditTextHeight" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -54,7 +54,7 @@
             android:id="@+id/fragmentRegisterPassword"
             style="@style/FragmentRegisterEditTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+            android:layout_height="@dimen/EditTextHeight" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -68,7 +68,7 @@
             android:id="@+id/fragmentRegisterRepeatPassword"
             style="@style/FragmentRegisterEditTextRepeatPassword"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/FragmentRegisterEditTextHeight" />
+            android:layout_height="@dimen/EditTextHeight" />
 
     </android.support.design.widget.TextInputLayout>
 
