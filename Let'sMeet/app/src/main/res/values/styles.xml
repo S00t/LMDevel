@@ -173,8 +173,7 @@
     </style>
 
     <!-- FRAGMENT ACCOUNT -->
-    <style name="fragmentAccountLayout">
-
+    <style name="fragmentAccountLayout" parent="LetsMeetFragment">
     </style>
     <style name="FragmentAccountDivider"></style>
     <!-- avatar -->

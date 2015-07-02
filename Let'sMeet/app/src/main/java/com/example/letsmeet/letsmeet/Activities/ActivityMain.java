@@ -54,7 +54,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-        openFragment(FRAGMENT_CHANGE_FRAGMENT);
+        openFragment(FRAGMENT_EVENT_ADD);
     }
 
     private void setUpNavDrawer() {
