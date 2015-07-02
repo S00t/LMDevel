@@ -82,6 +82,15 @@
     <string name="FragmentEventAddHintParticipantsNumber">Ilość osób ...</string>
     <string name="FragmentEventAddCheckBox">wydarzenie prywatne</string>
     <string name="FragmentEventAddButtonAdd">Dodaj ...</string>
+    <!-- FRAGMENT ACCOUNT -->
+    <string name="FragmentAccountButtonChangeAvatar">Zmień</string>
+    <string name="FragmentAccountButtonRemoveAvatar">Usuń</string>
+    <string name="FragmentAccountNameHint">Imię ...</string>
+    <string name="FragmentAccountSurnameHint">Nazwisko ...</string>
+    <string name="FragmentAccountPhoneHint">Telefon ...</string>
+    <string name="FragmentAccountPlaceHint">Miejscowość</string>
+    <string name="FragmentAccountSaveButton">Zapisz</string>
+    <string name="FragmentAccountMailHint">Email ...</string>
 
 
 </resources>

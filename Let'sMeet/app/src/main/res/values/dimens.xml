@@ -33,6 +33,19 @@
     <dimen name="FragmentEventAddCheckBoxHeight">35dp</dimen>
     <dimen name="FragmentEventAddCheckBoxMarginTop">15dp</dimen>
     <dimen name="FragmentEventAddButtonAddMarginTop">25dp</dimen>
+    <!-- FRAGMENT ACCOUNT -->
+    <dimen name="FragmentAccountImageAvatarWidth">150dp</dimen>
+    <dimen name="FragmentAccountImageAvatarHeight">150dp</dimen>
+    <dimen name="FragmentAccountLayoutPaddingTop">30dp</dimen>
+    <dimen name="FragmentAccountDividerWidth">40dp</dimen>
+    <dimen name="FragmentAccountDividerHeight">15dp</dimen>
+    <dimen name="FragmentAccountButtonsWidth">75dp</dimen>
+    <dimen name="FragmentAccountLayoutPaddingLeft">35dp</dimen>
+    <dimen name="FragmentAccountLayoutPaddingRight">35dp</dimen>
+    <dimen name="FragmentAccountPhoneAndPlaceParentMarginTop">15dp</dimen>
+    <dimen name="FragmentAccountPhoneMarginRight">7.5dp</dimen>
+    <dimen name="FragmentAccountPlaceMarginLeft">7.5dp</dimen>
+    <dimen name="FragmentAccountSaveButtonMarginTop">15dp</dimen>
 
 
 </resources>

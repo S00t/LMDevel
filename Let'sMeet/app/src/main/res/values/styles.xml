@@ -24,6 +24,7 @@
         <item name="android:textSize">@dimen/EditTextSize</item>
         <item name="android:background">@drawable/round_edit_text</item>
         <item name="android:padding">10dp</item>
+        <item name="android:maxLines">1</item>
     </style>
     <style name="LetsMeetButton">
         <item name="android:textSize">@dimen/EditTextSize</item>
@@ -161,5 +162,75 @@
         <item name="android:text">@string/FragmentEventAddButtonAdd</item>
         <item name="android:textColor">@color/White</item>
     </style>
+
+    <!-- FRAGMENT ACCOUNT -->
+    <style name="fragmentAccountLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/background_main</item>
+        <item name="android:paddingTop">@dimen/FragmentAccountLayoutPaddingTop</item>
+        <item name="android:paddingLeft">@dimen/FragmentAccountLayoutPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/FragmentAccountLayoutPaddingRight</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="FragmentAccountDivider"></style>
+    <!-- avatar -->
+    <style name="FragmentAccountImageAvatarParent">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="FragmentAccountImageAvatar" parent="LetsMeetEditText">
+    </style>
+    <!-- save and change avatar -->
+    <style name="FragmentAccountButtonsParent">
+    </style>
+    <style name="FragmentAccountButtonChangeAvatar" parent="LetsMeetButton">
+        <item name="android:text">@string/FragmentAccountButtonChangeAvatar</item>
+        <item name="android:background">@drawable/top_round_corners</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="FragmentAccountButtonRemoveAvatar" parent="LetsMeetButton">
+        <item name="android:text">@string/FragmentAccountButtonRemoveAvatar</item>
+        <item name="android:background">@drawable/bottom_round_corners</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <!-- name -->
+    <style name="FragmentAccountNameParentHint"></style>
+    <style name="FragmentAccountName" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentAccountNameHint</item>
+    </style>
+    <style name="FragmentAccountSurnameParentHint"></style>
+    <style name="FragmentAccountSurname" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentAccountSurnameHint</item>
+    </style>
+    <style name="FragmentAccountMailParentHint"></style>
+    <style name="FragmentAccountMail" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentAccountMailHint</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+    <!-- phone and place -->
+    <style name="FragmentAccountPhoneAndPlaceParent">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/FragmentAccountPhoneAndPlaceParentMarginTop</item>
+    </style>
+    <style name="FragmentAccountPhoneParentHint">
+        <item name="android:layout_marginRight">@dimen/FragmentAccountPhoneMarginRight</item>
+    </style>
+    <style name="FragmentAccountPhone" parent="LetsMeetEditText">
+        <item name="android:inputType">phone</item>
+        <item name="android:hint">@string/FragmentAccountPhoneHint</item>
+    </style>
+    <style name="FragmentAccountPlaceParentHint">
+        <item name="android:layout_marginLeft">@dimen/FragmentAccountPlaceMarginLeft</item>
+    </style>
+    <style name="FragmentAccountPlace" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentAccountPlaceHint</item>
+    </style>
+    <!-- save button -->
+    <style name="FragmentAccountSaveButton" parent="LetsMeetButton">
+        <item name="android:layout_marginTop">@dimen/FragmentAccountSaveButtonMarginTop</item>
+        <item name="android:text">@string/FragmentAccountSaveButton</item>
+    </style>
+
+
+
 
 </resources>
