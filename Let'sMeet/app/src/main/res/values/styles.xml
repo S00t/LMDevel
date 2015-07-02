@@ -31,6 +31,15 @@
         <item name="android:background">@drawable/round_button</item>
         <item name="android:padding">10dp</item>
     </style>
+    <style name="LetsMeetFragment">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/background_main</item>
+        <item name="android:paddingTop">@dimen/FragmentPaddingTop</item>
+        <item name="android:paddingLeft">@dimen/FragmentPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/FragmentPaddingRight</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
 
 
 
@@ -165,12 +174,7 @@
 
     <!-- FRAGMENT ACCOUNT -->
     <style name="fragmentAccountLayout">
-        <item name="android:orientation">vertical</item>
-        <item name="android:background">@drawable/background_main</item>
-        <item name="android:paddingTop">@dimen/FragmentAccountLayoutPaddingTop</item>
-        <item name="android:paddingLeft">@dimen/FragmentAccountLayoutPaddingLeft</item>
-        <item name="android:paddingRight">@dimen/FragmentAccountLayoutPaddingRight</item>
-        <item name="android:gravity">center_horizontal</item>
+
     </style>
     <style name="FragmentAccountDivider"></style>
     <!-- avatar -->
@@ -230,6 +234,40 @@
         <item name="android:text">@string/FragmentAccountSaveButton</item>
     </style>
 
+    <!-- FRAGMENT CHANGE PASSWORD -->
+    <style name="FragmentChange" parent="LetsMeetFragment">
+    </style>
+    <!-- old password -->
+    <style name="FragmentChangeOldPasswordParent">
+        <item name="android:layout_marginTop">@dimen/FragmentChangePasswordParentMarginTop</item>
+    </style>
+    <style name="FragmentChangeOldPassword" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentChangePasswordHint</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">50</item>
+    </style>
+    <style name="FragmentChangePasswordDivider"></style>
+    <!-- new password -->
+    <style name="FragmentChangePasswordParent">
+        <item name="android:layout_marginTop">@dimen/FragmentChangePasswordParentMarginTop</item>
+    </style>
+    <style name="FragmentChangePassword" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentChangePassword</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">50</item>
+    </style>
+    <style name="FragmentChangeRepeatPasswordParent">
+        <item name="android:layout_marginTop">@dimen/FragmentChangePasswordParentMarginTop</item>
+    </style>
+    <style name="FragmentChangeRepeatPassword" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentChangePassword</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">50</item>
+    </style>
+    <style name="FragmentChangeButtonChange" parent="LetsMeetButton">
+        <item name="android:layout_marginTop">@dimen/FragmentChangeButtonChangeMarginTop</item>
+        <item name="android:text">@string/FragmentChangeButtonChange</item>
+    </style>
 
 
 

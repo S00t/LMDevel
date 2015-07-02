@@ -44,9 +44,6 @@ public class FragmentAccount extends Fragment {
     }
 
     private void setUpViews(View layout) {
-        eName       = (EditText) layout.findViewById(R.id.fragmentRegisterName);
-        eSurname    = (EditText) layout.findViewById(R.id.fragmentRegisterSurname);
-        eMail       = (EditText) layout.findViewById(R.id.fragmentRegisterMail);
         // todo ...
     }
 }

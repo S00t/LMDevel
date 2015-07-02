@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.example.letsmeet.letsmeet.Fragments.FragmentAccount;
+import com.example.letsmeet.letsmeet.Fragments.FragmentChangePassword;
 import com.example.letsmeet.letsmeet.Fragments.FragmentEventAdd;
 import com.example.letsmeet.letsmeet.Fragments.FragmentEvent;
 import com.example.letsmeet.letsmeet.Fragments.FragmentEventList;
@@ -38,6 +39,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
     public static final int FRAGMENT_EVENT_ADD  = 4;
     public static final int FRAGMENT_EVENT_LIST = 5;
     public static final int FRAGMENT_ACCOUNT    = 6;
+    public static final int FRAGMENT_CHANGE_FRAGMENT    = 7;
 
     private Toolbar toolbar;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -52,7 +54,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-        openFragment(FRAGMENT_ACCOUNT);
+        openFragment(FRAGMENT_CHANGE_FRAGMENT);
     }
 
     private void setUpNavDrawer() {
@@ -102,6 +104,8 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
                 return FragmentRegister.newInstance();
             case FRAGMENT_SEARCH:
                 return FragmentSearch.newInstance();
+            case FRAGMENT_CHANGE_FRAGMENT:
+                return FragmentChangePassword.newInstance();
             default:
                 Log.d("test", "I cant find fragment to open");
                 break;

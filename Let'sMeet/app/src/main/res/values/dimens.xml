@@ -7,6 +7,11 @@
     <dimen name="EditTextSize">15sp</dimen>
     <dimen name="EditTextHeight">40dp</dimen>
 
+    <!-- FRAGMENT -->
+    <dimen name="FragmentPaddingTop">30dp</dimen>
+    <dimen name="FragmentPaddingLeft">35dp</dimen>
+    <dimen name="FragmentPaddingRight">35dp</dimen>
+
     <!-- FRAGMENT REGISTER -->
     <dimen name="FragmentRegisterLayoutMarginTop">30dp</dimen>
     <!--<dimen name="FragmentRegisterEditTextEms">25</dimen>-->
@@ -36,16 +41,18 @@
     <!-- FRAGMENT ACCOUNT -->
     <dimen name="FragmentAccountImageAvatarWidth">150dp</dimen>
     <dimen name="FragmentAccountImageAvatarHeight">150dp</dimen>
-    <dimen name="FragmentAccountLayoutPaddingTop">30dp</dimen>
     <dimen name="FragmentAccountDividerWidth">40dp</dimen>
     <dimen name="FragmentAccountDividerHeight">15dp</dimen>
     <dimen name="FragmentAccountButtonsWidth">75dp</dimen>
-    <dimen name="FragmentAccountLayoutPaddingLeft">35dp</dimen>
-    <dimen name="FragmentAccountLayoutPaddingRight">35dp</dimen>
+
     <dimen name="FragmentAccountPhoneAndPlaceParentMarginTop">15dp</dimen>
     <dimen name="FragmentAccountPhoneMarginRight">7.5dp</dimen>
     <dimen name="FragmentAccountPlaceMarginLeft">7.5dp</dimen>
     <dimen name="FragmentAccountSaveButtonMarginTop">15dp</dimen>
+    <!-- FRAGMENT CHANGE PASSWORD -->
+    <dimen name="FragmentChangePasswordParentMarginTop">15dp</dimen>
+    <dimen name="FragmentChangePasswordDividerHeight">15dp</dimen>
+    <dimen name="FragmentChangeButtonChangeMarginTop">25dp</dimen>
 
 
 </resources>
