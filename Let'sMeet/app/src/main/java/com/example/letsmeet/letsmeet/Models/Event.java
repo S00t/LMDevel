@@ -10,6 +10,7 @@ public class Event {
     private int type;
     private int mode;
     private String name;
+    private String description;
     private int participantsMax;
     private int participantsCurrent;
     private String place;
@@ -18,16 +19,16 @@ public class Event {
     public Event() {
     }
 
-    public Event(int type, int mode, String name, int participantsMax, int participantsCurrent, String place, String date) {
+    public Event(int type, int mode, String name, String description, int participantsMax, int participantsCurrent, String place, String date) {
         this.type = type;
         this.mode = mode;
         this.name = name;
+        this.description = description;
         this.participantsMax = participantsMax;
         this.participantsCurrent = participantsCurrent;
         this.place = place;
         this.date = date;
     }
-
 
     // ---------- get / set methods ----------
     public int getType() {
@@ -35,6 +36,13 @@ public class Event {
     }
     public void setType(int type) {
         this.type = type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getMode() {

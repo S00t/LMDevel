@@ -88,10 +88,10 @@ public class AdapterEventList extends RecyclerView.Adapter<AdapterEventList.View
 
         public ViewHolder(View itemView, OnItemClickListener listener) {
             super(itemView);
-            tTitle = (TextView) itemView.findViewById(R.id.ListEventTitle);
-            tParticipantsNumber = (TextView) itemView.findViewById(R.id.ListEventParticipants);
-            tDate = (TextView) itemView.findViewById(R.id.ListEventDate);
-            tAddress = (TextView) itemView.findViewById(R.id.ListEventAddress);
+            tTitle = (TextView) itemView.findViewById(R.id.listEventTitle);
+            tParticipantsNumber = (TextView) itemView.findViewById(R.id.listEventParticipants);
+            tDate = (TextView) itemView.findViewById(R.id.listEventDate);
+            tAddress = (TextView) itemView.findViewById(R.id.listEventAddress);
             // on click listener
             itemView.setOnClickListener(this);
             this.listener = listener; // listener to redirect OnClick

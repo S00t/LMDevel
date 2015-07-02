@@ -96,6 +96,9 @@
     <string name="FragmentChangeButtonChange">Zmień</string>
     <string name="FragmentSearchButtonSearch">Szukaj</string>
     <string name="FragmentSearchFieldSearch">Chcę iść na ...</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- FRAGMENT CHANGE PASSWORD -->
 
 

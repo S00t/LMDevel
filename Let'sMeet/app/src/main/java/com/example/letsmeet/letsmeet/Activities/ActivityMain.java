@@ -17,7 +17,7 @@ import android.view.MenuItem;
 import com.example.letsmeet.letsmeet.Fragments.FragmentAccount;
 import com.example.letsmeet.letsmeet.Fragments.FragmentChangePassword;
 import com.example.letsmeet.letsmeet.Fragments.FragmentEventAdd;
-import com.example.letsmeet.letsmeet.Fragments.FragmentEvent;
+import com.example.letsmeet.letsmeet.Fragments.FragmentEventDetails;
 import com.example.letsmeet.letsmeet.Fragments.FragmentEventList;
 import com.example.letsmeet.letsmeet.Fragments.FragmentLogin;
 import com.example.letsmeet.letsmeet.Fragments.FragmentRegister;
@@ -36,20 +36,21 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
     // purpose: if try to open same fragment as is currently display -> do nothing
     private static int activeFragment = -1;
 
-    public static final int FRAGMENT_LOGIN      = 0;
-    public static final int FRAGMENT_REGISTER   = 1;
-    public static final int FRAGMENT_SEARCH     = 2;
-    public static final int FRAGMENT_EVENT      = 3;
-    public static final int FRAGMENT_EVENT_ADD  = 4;
-    public static final int FRAGMENT_EVENT_LIST = 5;
-    public static final int FRAGMENT_ACCOUNT    = 6;
-    public static final int FRAGMENT_CHANGE_FRAGMENT    = 7;
+    public static final int FRAGMENT_LOGIN          = 0;
+    public static final int FRAGMENT_REGISTER       = 1;
+    public static final int FRAGMENT_SEARCH         = 2;
+    public static final int FRAGMENT_EVENT_DETAILS  = 3;
+    public static final int FRAGMENT_EVENT_ADD      = 4;
+    public static final int FRAGMENT_EVENT_LIST     = 5;
+    public static final int FRAGMENT_ACCOUNT        = 6;
+    public static final int FRAGMENT_CHANGE_FRAGMENT= 7;
 
     private Toolbar toolbar;
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
 
     private List<Event> eventList;
+    private Event selectedEvent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -60,8 +61,13 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-        createTestEventList();
-        openFragment(FRAGMENT_SEARCH);
+//        createTestEventList();
+        createTestEvent();
+        openFragment(FRAGMENT_EVENT_DETAILS);
+    }
+
+    private void createTestEvent() {
+        selectedEvent = new Event(0, 0, "wydarzenie", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 12, 4, "miejsce", "data");
     }
 
     private void createTestEventList(){
@@ -69,7 +75,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         for (int i = 0; i < 30; i++){
 //            String name, int participantsMax, int participantsCurrent, String place, String date)
             int tmp = (int) (Math.random()*100) %30;
-            eventList.add(new Event(0, 0, "wydarzenie "+i, tmp, Math.abs(tmp - i), "miejsce "+i, "data  "+i));
+            eventList.add(new Event(0, 0, "wydarzenie "+i, "opis" , tmp, Math.abs(tmp - i), "miejsce "+i, "data  "+i));
         }
     }
 
@@ -108,8 +114,8 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         switch (fragmentType) {
             case FRAGMENT_ACCOUNT:
                 return FragmentAccount.newInstance();
-            case FRAGMENT_EVENT:
-                return FragmentEvent.newInstance();
+            case FRAGMENT_EVENT_DETAILS:
+                return FragmentEventDetails.newInstance(selectedEvent);
             case FRAGMENT_EVENT_ADD:
                 return FragmentEventAdd.newInstance();
             case FRAGMENT_EVENT_LIST:

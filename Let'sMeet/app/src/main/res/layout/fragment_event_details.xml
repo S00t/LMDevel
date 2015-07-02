@@ -1,17 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main"
+    style="@style/FragmentEventDetails"
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/fragmentEventDetailsDescriptionAndParticipantsNumber"
+        style="@style/FragmentEventDetailsDescriptionAndParticipantsNumber"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/round_edit_text"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragmentEventDetailsDescription"
+            style="@style/FragmentEventDetailsDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fragmentEventDetailsParticipantsNumber"
+            style="@style/FragmentEventDetailsParticipantsNumber"
+            android:layout_width="@dimen/EventDetailsParticipantsWidth"
+            android:layout_height="@dimen/EventDetailsParticipantsHeight" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/eventDetailsIconAndDateParent"
+        style="@style/EventDetailsIconAndDateParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/eventDetailsIconDate"
+            android:src="@mipmap/clock"
+            style="@style/EventDetailsIcon"
+            android:layout_width="@dimen/LetsMeetIconsSizeWidth"
+            android:layout_height="@dimen/LetsMeetIconsSizeHeight" />
+
+        <TextView
+            android:id="@+id/eventDetailsDate"
+            style="@style/EventDetailsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventDetailsIconAndAddressParent"
+        style="@style/EventDetailsIconAndAddressParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/eventDetailsIconAddress"
+            android:src="@mipmap/map_marker"
+            style="@style/EventDetailsIcon"
+            android:layout_width="@dimen/LetsMeetIconsSizeWidth"
+            android:layout_height="@dimen/LetsMeetIconsSizeHeight" />
+
+        <TextView
+            android:id="@+id/eventDetailsAddress"
+            style="@style/EventDetailsAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </LinearLayout>

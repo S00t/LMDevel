@@ -324,5 +324,22 @@
         <item name="android:layout_marginTop">@dimen/FragmentSearchButtonSearchMarginTop</item>
     </style>
 
+    <!-- FRAGMENT EVENT DETAILS -->
+    <style name="FragmentEventDetails" parent="LetsMeetFragmentWhite">
+
+    </style>
+    <!-- description and participants -->
+    <style name="FragmentEventDetailsDescriptionAndParticipantsNumber"></style>
+    <style name="FragmentEventDetailsDescription"></style>
+    <style name="FragmentEventDetailsParticipantsNumber"></style>
+    <!-- icon -->
+    <style name="EventDetailsIcon"></style>
+    <!-- date -->
+    <style name="EventDetailsIconAndDateParent"></style>
+    <style name="EventDetailsDate"></style>
+    <!-- address -->
+    <style name="EventDetailsIconAndAddressParent"></style>
+    <style name="EventDetailsAddress"></style>
+
 
 </resources>

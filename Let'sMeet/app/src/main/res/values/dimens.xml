@@ -6,6 +6,8 @@
     <!-- GLOBAL -->
     <dimen name="EditTextSize">15sp</dimen>
     <dimen name="EditTextHeight">40dp</dimen>
+    <dimen name="LetsMeetIconsSizeHeight">25dp</dimen>
+    <dimen name="LetsMeetIconsSizeWidth">25dp</dimen>
 
     <!-- FRAGMENT -->
     <dimen name="FragmentPaddingTop">30dp</dimen>
@@ -60,8 +62,8 @@
     <dimen name="FragmentChangePasswordDividerHeight">15dp</dimen>
     <dimen name="FragmentChangeButtonChangeMarginTop">25dp</dimen>
     <!-- FRAGMENT EVENT LIST -->
-    <dimen name="ListEventIconWidth">25dp</dimen>
-    <dimen name="ListEventIconHeight">25dp</dimen>
+    <!--<dimen name="ListEventIconWidth">25dp</dimen>-->
+    <!--<dimen name="ListEventIconHeight">25dp</dimen>-->
     <dimen name="ListEventIconMarginRight">5dp</dimen>
     <dimen name="ListEventPaddingLeft">10dp</dimen>
     <dimen name="ListEventPaddingRight">10dp</dimen>
@@ -69,6 +71,10 @@
     <dimen name="ListEventTitleAndParticipantsNumberParentMarginTop">5dp</dimen>
     <dimen name="ListEventParticipantsWidth">40dp</dimen>
     <dimen name="ListEventParticipantsHeight">30dp</dimen>
+    <!-- FRAGMENT SEARCH-->
     <dimen name="FragmentSearchButtonSearchMarginTop">15dp</dimen>
+    <!-- FRAGMENT EVENT DETAILS -->
+    <dimen name="EventDetailsParticipantsWidth">40dp</dimen>
+    <dimen name="EventDetailsParticipantsHeight">30dp</dimen>
 
 </resources>
