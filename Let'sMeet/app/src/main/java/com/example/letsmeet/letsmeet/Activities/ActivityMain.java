@@ -22,7 +22,11 @@ import com.example.letsmeet.letsmeet.Fragments.FragmentEventList;
 import com.example.letsmeet.letsmeet.Fragments.FragmentLogin;
 import com.example.letsmeet.letsmeet.Fragments.FragmentRegister;
 import com.example.letsmeet.letsmeet.Fragments.FragmentSearch;
+import com.example.letsmeet.letsmeet.Models.Event;
 import com.example.letsmeet.letsmeet.R;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by fares on 07.06.15.
@@ -45,6 +49,8 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
 
+    private List<Event> eventList;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +60,17 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-        openFragment(FRAGMENT_EVENT_ADD);
+        createTestEventList();
+        openFragment(FRAGMENT_EVENT_LIST);
+    }
+
+    private void createTestEventList(){
+        eventList = new LinkedList<>();
+        for (int i = 0; i < 30; i++){
+//            String name, int participantsMax, int participantsCurrent, String place, String date)
+            int tmp = (int) (Math.random()*100) %30;
+            eventList.add(new Event(0, 0, "wydarzenie "+i, tmp, Math.abs(tmp - i), "miejsce "+i, "data  "+i));
+        }
     }
 
     private void setUpNavDrawer() {
@@ -97,7 +113,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
             case FRAGMENT_EVENT_ADD:
                 return FragmentEventAdd.newInstance();
             case FRAGMENT_EVENT_LIST:
-                return FragmentEventList.newInstance();
+                return FragmentEventList.newInstance(eventList);
             case FRAGMENT_LOGIN:
                 return FragmentLogin.newInstance();
             case FRAGMENT_REGISTER:

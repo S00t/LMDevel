@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentEventListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ListEventTitleAndParticipantsNumberParent"
+        style="@style/ListEventTitleAndParticipantsNumberParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ListEventTitle"
+            style="@style/ListEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ListEventParticipants"
+            style="@style/ListEventParticipants"
+            android:layout_width="@dimen/ListEventParticipantsWidth"
+            android:layout_height="@dimen/ListEventParticipantsHeight" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ListEventIconAndDateParent"
+        style="@style/ListEventIconAndDateParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ListEventIconDate"
+            android:src="@mipmap/clock"
+            style="@style/ListEventIcon"
+            android:layout_width="@dimen/ListEventIconWidth"
+            android:layout_height="@dimen/ListEventIconHeight" />
+
+        <TextView
+            android:id="@+id/ListEventDate"
+            style="@style/ListEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ListEventIconAndAddressParent"
+        style="@style/ListEventIconAndAddressParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ListEventIconAddress"
+            android:src="@mipmap/map_marker"
+            style="@style/ListEventIcon"
+            android:layout_width="@dimen/ListEventIconWidth"
+            android:layout_height="@dimen/ListEventIconHeight" />
+
+        <TextView
+            android:id="@+id/ListEventAddress"
+            style="@style/ListEventAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

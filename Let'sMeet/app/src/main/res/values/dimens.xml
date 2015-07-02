@@ -11,6 +11,12 @@
     <dimen name="FragmentPaddingTop">30dp</dimen>
     <dimen name="FragmentPaddingLeft">35dp</dimen>
     <dimen name="FragmentPaddingRight">35dp</dimen>
+    <!-- FRAGMENT white -->
+    <dimen name="FragmentMarginTop">30dp</dimen>
+    <dimen name="FragmentMarginLeft">35dp</dimen>
+    <dimen name="FragmentMarginRight">35dp</dimen>
+    <dimen name="FragmentMarginBottom">30dp</dimen>
+
 
     <!-- FRAGMENT REGISTER -->
     <dimen name="FragmentRegisterLayoutMarginTop">30dp</dimen>
@@ -53,6 +59,15 @@
     <dimen name="FragmentChangePasswordParentMarginTop">15dp</dimen>
     <dimen name="FragmentChangePasswordDividerHeight">15dp</dimen>
     <dimen name="FragmentChangeButtonChangeMarginTop">25dp</dimen>
-
+    <!-- FRAGMENT EVENT LIST -->
+    <dimen name="ListEventIconWidth">25dp</dimen>
+    <dimen name="ListEventIconHeight">25dp</dimen>
+    <dimen name="ListEventIconMarginRight">5dp</dimen>
+    <dimen name="ListEventPaddingLeft">10dp</dimen>
+    <dimen name="ListEventPaddingRight">10dp</dimen>
+    <dimen name="ListEventTitleAndParticipantsNumberParentMarginBottom">5dp</dimen>
+    <dimen name="ListEventTitleAndParticipantsNumberParentMarginTop">5dp</dimen>
+    <dimen name="ListEventParticipantsWidth">40dp</dimen>
+    <dimen name="ListEventParticipantsHeight">30dp</dimen>
 
 </resources>
