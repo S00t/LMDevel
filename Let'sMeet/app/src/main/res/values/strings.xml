@@ -94,9 +94,8 @@
     <string name="FragmentChangePasswordHint">Stare hasło ...</string>
     <string name="FragmentChangePassword">Nowe hasło</string>
     <string name="FragmentChangeButtonChange">Zmień</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="FragmentSearchButtonSearch">Szukaj</string>
+    <string name="FragmentSearchFieldSearch">Chcę iść na ...</string>
     <!-- FRAGMENT CHANGE PASSWORD -->
 
 

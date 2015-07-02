@@ -310,5 +310,19 @@
     <style name="ListEventIconAndAddressParent"></style>
     <style name="ListEventAddress"></style>
 
+    <!-- FRAGMENT SEARCH -->
+    <style name="FragmentSearchLayout" parent="LetsMeetFragment">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="FragmentSearchFieldSearchParent"></style>
+    <style name="FragmentSearchFieldSearch" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentSearchFieldSearch</item>
+    </style>
+    <!-- start search button -->
+    <style name="FragmentSearchButtonSearch" parent="LetsMeetButton">
+        <item name="android:text">@string/FragmentSearchButtonSearch</item>
+        <item name="android:layout_marginTop">@dimen/FragmentSearchButtonSearchMarginTop</item>
+    </style>
+
 
 </resources>

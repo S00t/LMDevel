@@ -69,5 +69,6 @@
     <dimen name="ListEventTitleAndParticipantsNumberParentMarginTop">5dp</dimen>
     <dimen name="ListEventParticipantsWidth">40dp</dimen>
     <dimen name="ListEventParticipantsHeight">30dp</dimen>
+    <dimen name="FragmentSearchButtonSearchMarginTop">15dp</dimen>
 
 </resources>

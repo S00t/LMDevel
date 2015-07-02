@@ -61,7 +61,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
 
         // test
         createTestEventList();
-        openFragment(FRAGMENT_EVENT_LIST);
+        openFragment(FRAGMENT_SEARCH);
     }
 
     private void createTestEventList(){
