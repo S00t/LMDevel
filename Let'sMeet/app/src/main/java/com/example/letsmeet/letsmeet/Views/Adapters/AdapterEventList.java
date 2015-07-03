@@ -33,12 +33,12 @@ public class AdapterEventList extends RecyclerView.Adapter<AdapterEventList.View
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_event, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_event_card, parent, false);
 
         if (viewType == EVEN)
-            itemView.setBackgroundColor(context.getResources().getColor(R.color.list_background));
+            itemView.setBackgroundColor(context.getResources().getColor(R.color.transparent));
         else
-            itemView.setBackgroundColor(context.getResources().getColor(R.color.list_background_second));
+            itemView.setBackgroundColor(context.getResources().getColor(R.color.transparent));
 
         return new ViewHolder(itemView, listener);
     }

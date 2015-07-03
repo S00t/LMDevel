@@ -71,10 +71,16 @@
     <dimen name="ListEventTitleAndParticipantsNumberParentMarginTop">5dp</dimen>
     <dimen name="ListEventParticipantsWidth">40dp</dimen>
     <dimen name="ListEventParticipantsHeight">30dp</dimen>
-    <!-- FRAGMENT SEARCH-->
+    <!-- FRAGMENT SEARCH -->
     <dimen name="FragmentSearchButtonSearchMarginTop">15dp</dimen>
     <!-- FRAGMENT EVENT DETAILS -->
     <dimen name="EventDetailsParticipantsWidth">40dp</dimen>
     <dimen name="EventDetailsParticipantsHeight">30dp</dimen>
+    <!-- FRAGMENT LOGO -->
+    <dimen name="FragmentLoginLogoMarginTop">15dp</dimen>
+    <dimen name="FragmentLoginMailMarginTop">150dp</dimen>
+    <dimen name="FragmentLoginPasswordMarginTop">15dp</dimen>
+    <dimen name="FragmentLoginButtonLoginMarginTop">15dp</dimen>
+    <dimen name="FragmentLoginButtonRegisterMarginTop">15dp</dimen>
 
 </resources>

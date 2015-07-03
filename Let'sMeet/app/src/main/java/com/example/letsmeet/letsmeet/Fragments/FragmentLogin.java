@@ -74,11 +74,11 @@ public class FragmentLogin extends Fragment implements Animation.AnimationListen
     }
 
     private void linkViews(View layout) {
-        logo = (ImageView) layout.findViewById(R.id.logo);
-        login = (EditText) layout.findViewById(R.id.login);
-        passwordLogin = (EditText) layout.findViewById(R.id.passwordLogin);
-        loginButton = (Button) layout.findViewById(R.id.loginButton);
-        registerButton = (Button) layout.findViewById(R.id.registerButton);
+        logo = (ImageView) layout.findViewById(R.id.fragmentLoginLogo);
+        login = (EditText) layout.findViewById(R.id.fragmentLoginMail);
+        passwordLogin = (EditText) layout.findViewById(R.id.fragmentLoginPassword);
+        loginButton = (Button) layout.findViewById(R.id.fragmentLoginButtonLogin);
+        registerButton = (Button) layout.findViewById(R.id.fragmentLoginButtonRegister);
     }
 
     private void setUpVisibility() {

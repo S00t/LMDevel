@@ -61,9 +61,9 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-//        createTestEventList();
-        createTestEvent();
-        openFragment(FRAGMENT_EVENT_DETAILS);
+        createTestEventList();
+//        createTestEvent();
+        openFragment(FRAGMENT_LOGIN);
     }
 
     private void createTestEvent() {

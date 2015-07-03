@@ -47,9 +47,9 @@
     <string name="Places">Lokale</string>
     <string name="password">Hasło...</string>
     <string name="password_hint">Hasło...</string>
-    <string name="login_hint">Login...</string>
-    <string name="login_button">Zaloguj</string>
-    <string name="register_button">Zarejestruj</string>
+    <!--<string name="login_hint">Login...</string>-->
+    <!--<string name="login_button">Zaloguj</string>-->
+    <!--<string name="register_button">Zarejestruj</string>-->
     <string name="title_activity_register">RegisterActivity</string>
     <string name="login_fail">Nieprawidłwy login. Spróbuj ponownie.</string>
     <string name="title_activity_testctivity">testctivity</string>
@@ -96,10 +96,11 @@
     <string name="FragmentChangeButtonChange">Zmień</string>
     <string name="FragmentSearchButtonSearch">Szukaj</string>
     <string name="FragmentSearchFieldSearch">Chcę iść na ...</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- FRAGMENT CHANGE PASSWORD -->
+    <!-- FRAGMENT LOGIN -->
+    <string name="FragmentLoginMailHint">Login...</string>
+    <string name="FragmentLoginButtonLogin">Zaloguj</string>
+    <string name="FragmentLoginButtonRegister">Zarejestruj</string>
 
 
 </resources>

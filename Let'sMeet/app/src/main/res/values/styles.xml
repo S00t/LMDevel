@@ -280,9 +280,15 @@
     </style>
 
     <!-- FRAGMENT EVENT LIST -->
-    <style name="FragmentEventList" parent="LetsMeetFragmentWhite">
+    <style name="FragmentEventList">
     </style>
     <style name="FragmentEventListItem">
+        <item name="android:layout_margin">7dp</item>
+        <!--<item name="android:layout_marginTop">7dp</item>-->
+        <!--<item name="android:layout_marginBottom">7dp</item>-->
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+
         <!--<item name="android:paddingLeft">@dimen/ListEventPaddingLeft</item>-->
         <!--<item name="android:paddingRight">@dimen/ListEventPaddingRight</item>-->
     </style>
@@ -341,5 +347,38 @@
     <style name="EventDetailsIconAndAddressParent"></style>
     <style name="EventDetailsAddress"></style>
 
+    <!-- FRAGMENT LOGIN -->
+    <style name="FragmentLogin" parent="LetsMeetFragment"></style>
+    <!-- logo -->
+    <style name="FragmentLoginLogo">
+        <item name="android:layout_marginTop">@dimen/FragmentLoginLogoMarginTop</item>
+        <item name="android:src">@drawable/logo</item>
+    </style>
+    <style name="FragmentLoginMailParent"></style>
+    <style name="FragmentLoginMail" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentLoginMailHint</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:layout_marginTop">@dimen/FragmentLoginMailMarginTop</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="FragmentLoginPasswordParent"></style>
+    <style name="FragmentLoginPassword" parent="LetsMeetEditText">
+        <item name="android:hint">@string/FragmentLoginPasswordHint</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_marginTop">@dimen/FragmentLoginPasswordMarginTop</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="FragmentLoginButtonLogin" parent="LetsMeetButton">
+        <item name="android:text">@string/FragmentLoginButtonLogin</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">@dimen/FragmentLoginButtonLoginMarginTop</item>
+    </style>
+    <style name="FragmentLoginButtonRegister" parent="LetsMeetButton">
+        <item name="android:text">@string/FragmentLoginButtonRegister</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">@dimen/FragmentLoginButtonRegisterMarginTop</item>
+    </style>
 
+
+    <string name="FragmentLoginPasswordHint">Password...</string>
 </resources>
