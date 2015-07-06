@@ -69,6 +69,107 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/eventDetailsJoin"
+        style="@style/EventDetailsJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/EventDetailsOrganizerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/eventDetailsIconAndOrganizerNameParent"
+        style="@style/EventDetailsIconAndOrganizerNameParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:src="@mipmap/map_marker"
+            style="@style/EventDetailsIcon"
+            android:layout_width="@dimen/LetsMeetIconsSizeWidth"
+            android:layout_height="@dimen/LetsMeetIconsSizeHeight" />
+
+        <TextView
+            android:id="@+id/eventDetailsOrganizerName"
+            style="@style/EventDetailsOrganizerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventDetailsIconAndOrganizerMailParent"
+        style="@style/EventDetailsIconAndOrganizerMailParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:src="@mipmap/map_marker"
+            style="@style/EventDetailsIcon"
+            android:layout_width="@dimen/LetsMeetIconsSizeWidth"
+            android:layout_height="@dimen/LetsMeetIconsSizeHeight" />
+
+        <TextView
+            android:id="@+id/eventDetailsOrganizerMail"
+            style="@style/EventDetailsOrganizerMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventDetailsIconAndOrganizerPhoneParent"
+        style="@style/EventDetailsIconAndOrganizerPhoneParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:src="@mipmap/map_marker"
+            style="@style/EventDetailsIcon"
+            android:layout_width="@dimen/LetsMeetIconsSizeWidth"
+            android:layout_height="@dimen/LetsMeetIconsSizeHeight" />
+
+        <TextView
+            android:id="@+id/eventDetailsOrganizerPhone"
+            style="@style/EventDetailsOrganizerPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventDetailsContactParent"
+        style="@style/EventDetailsContactParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/eventDetailsOrganizerMakeCall"
+            style="@style/EventDetailsOrganizerMakeCall"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/eventDetailsOrganizerWriteMail"
+            style="@style/EventDetailsOrganizerWriteMail"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/EventDetailsLocationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/eventDetailMap"
         android:layout_width="match_parent"

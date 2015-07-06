@@ -113,6 +113,7 @@
         <item name="android:textColor">@color/White</item>
     </style>
 
+
     <!-- FRAGMENT EVENT ADD -->
     <style name="FragmentEventAddDivider">
         <item name="android:gravity">center_horizontal</item>
@@ -162,7 +163,6 @@
         <item name="android:hint">@string/FragmentEventAddHintParticipantsNumber</item>
         <item name="android:inputType">numberDecimal</item>
     </style>
-
     <style name="FragmentEventAdd">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/background_main</item>
@@ -182,6 +182,7 @@
         <item name="android:text">@string/FragmentEventAddButtonAdd</item>
         <item name="android:textColor">@color/White</item>
     </style>
+
 
     <!-- FRAGMENT ACCOUNT -->
     <style name="fragmentAccountLayout" parent="LetsMeetFragment">
@@ -279,6 +280,7 @@
         <item name="android:text">@string/FragmentChangeButtonChange</item>
     </style>
 
+
     <!-- FRAGMENT EVENT LIST -->
     <style name="FragmentEventList">
     </style>
@@ -316,6 +318,7 @@
     <style name="ListEventIconAndAddressParent"></style>
     <style name="ListEventAddress"></style>
 
+
     <!-- FRAGMENT SEARCH -->
     <style name="FragmentSearchLayout" parent="LetsMeetFragment">
         <item name="android:gravity">center</item>
@@ -330,14 +333,23 @@
         <item name="android:layout_marginTop">@dimen/FragmentSearchButtonSearchMarginTop</item>
     </style>
 
+
     <!-- FRAGMENT EVENT DETAILS -->
     <style name="FragmentEventDetails" parent="LetsMeetFragmentWhite">
 
     </style>
     <!-- description and participants -->
-    <style name="FragmentEventDetailsDescriptionAndParticipantsNumber"></style>
-    <style name="FragmentEventDetailsDescription"></style>
-    <style name="FragmentEventDetailsParticipantsNumber"></style>
+    <style name="FragmentEventDetailsDescriptionAndParticipantsNumber">
+    </style>
+    <style name="FragmentEventDetailsDescription">
+        <item name="android:layout_marginRight">@dimen/EventDetailsParticipantsWidth</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="FragmentEventDetailsParticipantsNumber">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:gravity">center</item>
+    </style>
     <!-- icon -->
     <style name="EventDetailsIcon"></style>
     <!-- date -->
@@ -346,6 +358,36 @@
     <!-- address -->
     <style name="EventDetailsIconAndAddressParent"></style>
     <style name="EventDetailsAddress"></style>
+    <!-- join button -->
+    <style name="EventDetailsJoin" parent="LetsMeetButton">
+        <item name="android:text">@string/EventDetailsJoin</item>
+    </style>
+    <style name="EventDetailsOrganizerTitle">
+        <item name="android:text">@string/EventDetailsOrganizerTitle</item>
+    </style>
+    <!-- organizer name -->
+    <style name="EventDetailsIconAndOrganizerNameParent"></style>
+    <style name="EventDetailsOrganizerName"></style>
+    <!-- organizer mail -->
+    <style name="EventDetailsIconAndOrganizerMailParent"></style>
+    <style name="EventDetailsOrganizerMail"></style>
+    <!-- phone -->
+    <style name="EventDetailsIconAndOrganizerPhoneParent"></style>
+    <style name="EventDetailsOrganizerPhone"></style>
+    <!-- buttons call or write mail -->
+    <style name="EventDetailsContactParent"></style>
+    <style name="EventDetailsOrganizerMakeCall" parent="LetsMeetButton">
+        <item name="android:background">@drawable/round_button_left_blue</item>
+        <item name="android:text">@string/EventDetailsOrganizerMakeCall</item>
+    </style>
+    <style name="EventDetailsOrganizerWriteMail" parent="LetsMeetButton">
+        <item name="android:background">@drawable/round_button_right_yellow</item>
+        <item name="android:text">@string/EventDetailsOrganizerWriteMail</item>
+    </style>
+    <style name="EventDetailsLocationTitle">
+        <item name="android:text">@string/EventDetailsLocationTitle</item>
+    </style>
+
 
     <!-- FRAGMENT LOGIN -->
     <style name="FragmentLogin" parent="LetsMeetFragment"></style>
@@ -379,6 +421,4 @@
         <item name="android:layout_marginTop">@dimen/FragmentLoginButtonRegisterMarginTop</item>
     </style>
 
-
-    <string name="FragmentLoginPasswordHint">Password...</string>
 </resources>

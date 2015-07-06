@@ -101,6 +101,12 @@
     <string name="FragmentLoginMailHint">Login...</string>
     <string name="FragmentLoginButtonLogin">Zaloguj</string>
     <string name="FragmentLoginButtonRegister">Zarejestruj</string>
+    <string name="FragmentLoginPasswordHint">Password...</string>
+    <string name="EventDetailsOrganizerMakeCall">Zadzwoń</string>
+    <string name="EventDetailsOrganizerWriteMail">Napisz</string>
+    <string name="EventDetailsJoin">Dołącz</string>
+    <string name="EventDetailsLocationTitle">Lokalizacja</string>
+    <string name="EventDetailsOrganizerTitle">Organizator</string>
 
 
 </resources>

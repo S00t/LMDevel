@@ -23,6 +23,7 @@ import com.example.letsmeet.letsmeet.Fragments.FragmentLogin;
 import com.example.letsmeet.letsmeet.Fragments.FragmentRegister;
 import com.example.letsmeet.letsmeet.Fragments.FragmentSearch;
 import com.example.letsmeet.letsmeet.Models.Event;
+import com.example.letsmeet.letsmeet.Models.Organizer;
 import com.example.letsmeet.letsmeet.R;
 
 import java.util.LinkedList;
@@ -51,6 +52,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
 
     private List<Event> eventList;
     private Event selectedEvent;
+    private Organizer organizer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -61,15 +63,16 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
         setUpNavDrawer();
 
         // test
-        createTestEventList();
-        openFragment(FRAGMENT_EVENT_LIST);
+        createTestEventAndOrganizerList();
+        openFragment(FRAGMENT_EVENT_DETAILS);
     }
 
-    private void createTestEvent() {
+    private void createTestEventAndOrganizer() {
         selectedEvent = new Event(0, 0, "wydarzenie", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 12, 4, "miejsce", "data");
+        organizer = new Organizer("Jan Kowalski", "jan.kowalski@gmail.com", "+48 588 934 229");
     }
 
-    private void createTestEventList(){
+    private void createTestEventAndOrganizerList(){
         eventList = new LinkedList<>();
         for (int i = 0; i < 30; i++){
 //            String name, int participantsMax, int participantsCurrent, String place, String date)
@@ -114,8 +117,8 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
             case FRAGMENT_ACCOUNT:
                 return FragmentAccount.newInstance();
             case FRAGMENT_EVENT_DETAILS:
-                createTestEvent();
-                return FragmentEventDetails.newInstance(selectedEvent);
+                createTestEventAndOrganizer();
+                return FragmentEventDetails.newInstance(selectedEvent, organizer);
             case FRAGMENT_EVENT_ADD:
                 return FragmentEventAdd.newInstance();
             case FRAGMENT_EVENT_LIST:

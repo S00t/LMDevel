@@ -125,30 +125,7 @@ public class FragmentLogin extends Fragment implements Animation.AnimationListen
     // --------------------------- OnClickListener ---------------------------
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.loginButton) {
-            resault = UtilValidate.ValidateLogin(login.getText());
-            if (resault) {
 
-                new getTokenTask().execute("");
-                //  Toast.makeText(getApplicationContext(), getResources().getText(R.string.login_fail),  Toast.LENGTH_LONG).show();
-
-//                   Toast.makeText(getApplicationContext(), "SUCCES + " + login.getText().length(),
-//                           Toast.LENGTH_LONG).show();
-//
-//                   Intent i = new Intent(LoginActivity.this, MainActivity.class);
-//                   startActivity(i);
-//++
-//                   // close this activity
-//                   finish();
-
-            } else {
-                Toast.makeText(getActivity(), message = getResources().getString(R.string.login_fail), Toast.LENGTH_LONG).show();
-            }
-        } else if (v.getId() == R.id.registerButton) {
-//            Intent activityChangeIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-//             currentContext.startActivity(activityChangeIntent);
-//            LoginActivity.this.startActivity(activityChangeIntent);
-        }
     }
 
     private class getTokenTask extends AsyncTask<String, Void, String> {
