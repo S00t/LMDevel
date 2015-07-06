@@ -3,30 +3,65 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/navigationItem1"
+            android:id="@+id/nav1EventList"
             android:checked="true"
             android:icon="@drawable/logo"
-            android:title="@string/nav_drawer_item_home"/>
+            android:title="Event List"/>
         <item
-            android:id="@+id/navigationItem2"
+            android:id="@+id/nav2Account"
             android:icon="@drawable/logo"
-            android:title="@string/nav_drawer_item_people"/>
+            android:title="Account"/>
         <item
-            android:id="@+id/navigationItem3"
+            android:id="@+id/nav3Login"
             android:icon="@drawable/logo"
-            android:title="@string/nav_drawer_item_photos"/>
+            android:title="Login"/>
         <item
-            android:id="@+id/navigationItem4"
+            android:id="@+id/nav4Register"
             android:icon="@drawable/logo"
-            android:title="@string/nav_drawer_item_communities"/>
+            android:title="Register"/>
         <item
-            android:id="@+id/navigationItem5"
+            android:id="@+id/nav5EventAdd"
             android:icon="@drawable/logo"
-            android:title="@string/nav_drawer_item_pages"/>
+            android:title="EventAdd"/>
         <item
-            android:id="@+id/navigationItem6"
+            android:id="@+id/nav6EventDetails"
             android:icon="@drawable/logo"
-            android:title="@string/nav_drawer_item_hot"/>
+            android:title="EventDetails"/>
+        <item
+            android:id="@+id/nav7ChangePassword"
+            android:icon="@drawable/logo"
+            android:title="ChangePassword"/>
+        <item
+            android:id="@+id/nav8Search"
+            android:icon="@drawable/logo"
+            android:title="Search"/>
+
+
+        <!--<item-->
+            <!--android:id="@+id/nav1Home"-->
+            <!--android:checked="true"-->
+            <!--android:icon="@drawable/logo"-->
+            <!--android:title="@string/nav_drawer_item_home"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav2FindPeople"-->
+            <!--android:icon="@drawable/logo"-->
+            <!--android:title="@string/nav_drawer_item_people"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav3Photos"-->
+            <!--android:icon="@drawable/logo"-->
+            <!--android:title="@string/nav_drawer_item_photos"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav4Communities"-->
+            <!--android:icon="@drawable/logo"-->
+            <!--android:title="@string/nav_drawer_item_communities"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav5Pages"-->
+            <!--android:icon="@drawable/logo"-->
+            <!--android:title="@string/nav_drawer_item_pages"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav6WhatsHot"-->
+            <!--android:icon="@drawable/logo"-->
+            <!--android:title="@string/nav_drawer_item_hot"/>-->
 
     </group>
 

@@ -43,7 +43,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
     public static final int FRAGMENT_EVENT_ADD      = 4;
     public static final int FRAGMENT_EVENT_LIST     = 5;
     public static final int FRAGMENT_ACCOUNT        = 6;
-    public static final int FRAGMENT_CHANGE_FRAGMENT= 7;
+    public static final int FRAGMENT_CHANGE_PASSWORD= 7;
 
     private Toolbar toolbar;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -62,7 +62,6 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
 
         // test
         createTestEventList();
-//        createTestEvent();
         openFragment(FRAGMENT_EVENT_LIST);
     }
 
@@ -115,6 +114,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
             case FRAGMENT_ACCOUNT:
                 return FragmentAccount.newInstance();
             case FRAGMENT_EVENT_DETAILS:
+                createTestEvent();
                 return FragmentEventDetails.newInstance(selectedEvent);
             case FRAGMENT_EVENT_ADD:
                 return FragmentEventAdd.newInstance();
@@ -126,7 +126,7 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
                 return FragmentRegister.newInstance();
             case FRAGMENT_SEARCH:
                 return FragmentSearch.newInstance();
-            case FRAGMENT_CHANGE_FRAGMENT:
+            case FRAGMENT_CHANGE_PASSWORD:
                 return FragmentChangePassword.newInstance();
             default:
                 Log.d("test", "I cant find fragment to open");
@@ -149,13 +149,31 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
-        if (id == R.id.navigationItem1){
+        if (id == R.id.nav1EventList){
             openFragment(FRAGMENT_EVENT_LIST);
         }
-        else if (id == R.id.navigationItem2) {
+        else if (id == R.id.nav2Account) {
+            openFragment(FRAGMENT_ACCOUNT);
         }
-        else if (id == R.id.navigationItem3) {
+        else if (id == R.id.nav3Login) {
+            openFragment(FRAGMENT_LOGIN);
         }
+        else if (id == R.id.nav4Register){
+            openFragment(FRAGMENT_REGISTER);
+        }
+        else if (id == R.id.nav5EventAdd){
+            openFragment(FRAGMENT_EVENT_ADD);
+        }
+        else if (id == R.id.nav6EventDetails){
+            openFragment(FRAGMENT_EVENT_DETAILS);
+        }
+        else if (id == R.id.nav7ChangePassword){
+            openFragment(FRAGMENT_CHANGE_PASSWORD);
+        }
+        else if (id == R.id.nav8Search){
+            openFragment(FRAGMENT_SEARCH);
+        }
+
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }

@@ -40,7 +40,8 @@ public class FragmentEventDetails extends Fragment {
     }
 
     private void fillViewsWithData() {
-        tDescription.setText(event.getDescription());
+        if (event.getDescription() != null)
+            tDescription.setText(event.getDescription());
 
         // set number of free space
         // if there is anyone assign to this event, get subtract (Max - current)
@@ -50,9 +51,11 @@ public class FragmentEventDetails extends Fragment {
         }
         else
             tParticipantsNumber.setText(Integer.toString(event.getParticipantsMax()));
-        
-        tDate.setText(event.getDate());
-        tAddress.setText(event.getPlace());
+
+        if (event.getDate() != null)
+            tDate.setText(event.getDate());
+        if (event.getPlace() != null)
+            tAddress.setText(event.getPlace());
     }
 
     private void setUpViews(View layout) {
