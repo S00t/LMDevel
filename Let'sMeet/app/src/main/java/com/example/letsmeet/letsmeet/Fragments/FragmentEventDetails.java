@@ -10,15 +10,19 @@ import android.widget.TextView;
 
 import com.example.letsmeet.letsmeet.Models.Event;
 import com.example.letsmeet.letsmeet.R;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 
-public class FragmentEventDetails extends Fragment {
+public class FragmentEventDetails extends Fragment implements OnMapReadyCallback {
 
     private Event event;
     // view's
-    public TextView tDescription;
-    public TextView tParticipantsNumber;
-    public TextView  tDate;
-    public TextView  tAddress;
+    private TextView tDescription;
+    private TextView tParticipantsNumber;
+    private TextView  tDate;
+    private TextView  tAddress;
+    private SupportMapFragment mapFragment;
 //    public ImageView iDate; // date icon. Currently is static import from res.
 //    public ImageView iAddress; // address icon. Currently is static import from res.
 
@@ -34,10 +38,22 @@ public class FragmentEventDetails extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_event_details, container, false);
 
         setUpViews(layout);
+        setUpMap();
         fillViewsWithData();
         
         return layout;
     }
+
+    private void setUpMap() {
+        mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.EventDetailMap);
+        mapFragment.getMapAsync(this);
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+    }
+
 
     private void fillViewsWithData() {
         if (event.getDescription() != null)
@@ -64,4 +80,6 @@ public class FragmentEventDetails extends Fragment {
         tDate = (TextView) layout.findViewById(R.id.eventDetailsDate);
         tAddress = (TextView) layout.findViewById(R.id.eventDetailsAddress);
     }
+
+
 }

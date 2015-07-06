@@ -29,6 +29,8 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.0.+'
     // circle images
     compile 'de.hdodenhof:circleimageview:1.2.1'
+    // play services - google map
+    compile 'com.google.android.gms:play-services:+'
     //
     compile 'org.androidannotations:androidannotations:3.2'
     compile 'com.android.support:support-annotations:21.0.3'
